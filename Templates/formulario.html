@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="formulario.css" rel="stylesheet">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div id="contenedor">
+        <form id="Registro">
+            <h1>Formulario completo</h1>
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="ApellidoP ApellidoM Nombre(s)" required>
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" name="edad" placeholder="Ingresa tu edad" min="0" required>
+            <label for="genero">Genero</label>
+            <div class="horizontal">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" checked>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Otro</label>
+                <input type="radio" id="otro" name="genero" value="otro">
+            </div>
+            <label for="Intereses">Intereses</label>
+            <div class="horizontal">
+                <label for="Tecnologia">Tecnologia</label>
+                <input type="checkbox" id="Tecnologia" name="Interes" value="Tecnologia">
+                <label for="Deportes">Deportes</label>
+                <input type="checkbox" id="Deportes" name="Interes" value="Deportes">
+                <label for="Musica">Musica</label>
+                <input type="checkbox" id="Musica" name="Interes" value="Musica">
+                <label for="Arte">Arte</label>
+                <input type="checkbox" id="Arte" name="Interes" value="Arte">
+            </div>
+            <label for="pais">Selecciona tu pais</label>
+            <select id="pais" name="pais">
+                <option value="Mexico">Mexico</option>
+            </select>
+            <label for="comentarios adicionales">comentarios adicionales</label>
+            <input type="text" id="comentarios" name="comentarios">
+            <label for="imagen">Subir imagen</label>
+            <input type="file" id="imagen" name="imagen" accept="image/png" accept="image/jpg">
+            <input type="submit">
+        </form>
+    </div>
+    <script src="formulario.js"></script>
+</body>
+</html>
